@@ -24,7 +24,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            height: 5vw;
+            height: 80px;
             background-color: rgb(0 4 44);
         }
 
@@ -40,35 +40,35 @@
 
         nav ul li {
             list-style: none;
-            margin: 0 1vw;
+            margin: 0 23px;
         }
 
-        nav ul li a{
+        nav ul li a {
             text-decoration: none;
             color: white;
         }
 
-        nav ul li a:hover{
+        nav ul li a:hover {
             color: rgb(159, 159, 232);
             font-size: 1.01rem;
         }
 
-        hr{
+        hr {
             background: rgb(132, 132, 218);
-            height: 0.25vw;
+            height: 5px;
             border: 0;
-            margin: 0vw 5vw;
+            margin: 0px 84px;
         }
 
         .first {
             display: flex;
             justify-content: space-around;
-            margin: 0vw 0;
+            margin: 60px 0;
         }
 
         .first>div {
             width: 40%;
-            margin: 50px 0;
+            margin: 10px 0;
         }
 
         .leftsection {
@@ -86,11 +86,31 @@
             font-weight: bolder;
         }
 
-        .secondsection{
-            margin: auto;
+        .secondsection {
+            margin: 20px auto;
             max-width: 80vw;
+            font-size: 1.5rem;
+            height: 80vh;
         }
-        
+
+        .text-grey {
+            color: grey;
+            font-size: 1.2rem;
+        }
+
+        .box {
+            display: flex;
+            background: white;
+            margin: 5vw 0vw;
+            height: 0.3vw;
+        }
+
+        .vertical{
+            height: 4vw;
+            width: 0.2vw;
+            margin-right: 10vw;
+            background: white;
+        }
     </style>
 </head>
 
@@ -116,8 +136,8 @@
                 Hi, my name is <span class="purple">Pratham</span>
                 <div>
                     and I am a passionate
-                    
-                    <span class ="purple" id="element"></span>
+
+                    <span class="purple" id="element"></span>
                 </div>
             </div>
             <div class="rightsection">
@@ -128,17 +148,25 @@
         <hr>
 
         <section class="secondsection">
+            <span class="text-grey">My Educational Qualifications till now</span>
             <h1>Education</h1>
+
+            <div class="box">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+
         </section>
 
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer.', '&amp; a Gamer.', '&amp; a Video Editor.', '&amp; a Graphic Designer.'],
-          typeSpeed: 50,
+            strings: ['Web Developer.', 'Gamer.', 'Video Editor.', 'Graphic Designer.'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
