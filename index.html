@@ -119,18 +119,30 @@
             top: -3vw;
         }
 
-        .vertical-title{
-
+        .vertical-title {
+            position: relative;
+            left: 1vw;
+            top: -1vw;
+            width: max-content;
         }
 
         .vertical-year {
-    color: #0043ff;
-    position: relative;
-    font-size: 1rem;
-    width: 8vw;
-    margin: 0vw 1vw;
-}
+            color: #0043ff;
+            position: relative;
+            font-size: 1rem;
+            width: 8vw;
+            margin: -1vw 1vw;
+        }
 
+        footer{
+            background-color: #19122c;
+            height: 30vw;
+        }
+
+        .footer {
+            display: flex;
+            padding: 2.3vw 12.2vw;
+        }
     </style>
 </head>
 
@@ -175,22 +187,26 @@
 
 
                 <div class="vertical">
-                    <img class="image-top" src="SVDD_LOGO.jpg" alt="">
-                    <div class="vertical-title">SVDD School</div>
+                    <a href="https://www.svdd.edu.in/"><img class="image-top" src="SVDD_LOGO.jpg" alt=""></a>
+                    <div class="vertical-title"><a href="https://www.svdd.edu.in/"
+                            style="text-decoration: none; color:white">SVDD School</a></div>
                     <div class="vertical-year">2010-2020</div>
                 </div>
 
 
                 <div class="vertical">
-                    <img class="image-top" src="pngegg.png" width="1vw" alt="">
-                    <div class="vertical-title">KJSSC</div>
+                    <a href="https://kjssc.somaiya.edu.in/en"><img class="image-top" src="pngegg.png" width="1vw"
+                            alt=""></a>
+                    <div class="vertical-title"><a href="https://kjssc.somaiya.edu.in/en"
+                            style="text-decoration: none; color:white">KJSSC</a></div>
                     <div class="vertical-year">2020-2022</div>
                 </div>
 
 
                 <div class="vertical">
-                    <img class="image-top" src="pngegg.png" alt="">
-                    <div class="vertical-title">KJSCE</div>
+                    <a href="https://kjsce.somaiya.edu/en"><img class="image-top" src="pngegg.png" alt=""></a>
+                    <div class="vertical-title"><a href="https://kjsce.somaiya.edu/en"
+                            style="text-decoration: none; color:white">KJSCE</a></div>
                     <div class="vertical-year">2012-2026</div>
                 </div>
 
@@ -200,6 +216,18 @@
         </section>
 
     </main>
+
+    <footer>    
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Pratham's Portfolio</h3>
+            </div>
+            <div class="footer-second"></div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
